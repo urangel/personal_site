@@ -1,11 +1,11 @@
 @font-face {
     font-family: AgeoBold;
-    src: url(./ageo/AgeoPersonalUse-Bold.otf)
+    src: url(./assets/fonts/ageo/AgeoPersonalUse-Bold.otf)
 }
 
 @font-face {
     font-family: AgeoLight;
-    src: url(./ageo/AgeoPersonalUse-Light.otf)
+    src: url(./assets/fonts/ageo/AgeoPersonalUse-Light.otf)
 }
 
 p {
@@ -19,96 +19,81 @@ body{
     height: 100%;
     overflow-y: scroll;
 }
-
+a:hover{
+	text-decoration: none;
+}
 #about {
-    height: 800px;
-    width: 100%;
+    background: #ccc url("./assets/images/wheat.png") repeat;
+    min-height: 100vh;
+}
+
+#about h1{
+    color: #222;
+}
+
+#about-text{
+    font-family: Garamond;
+}
+
+.fa-arrow-right, .fa-plus{
+    font-size: 1.5rem;
+}
+
+.state {
+    font-style: italic;
+    font-size: 1.5rem;
+    font-family: Garaomnd;
+
+    font-weight: bold;
+}
+
+#portfolio {
+    background: #aaa url("./assets/images/folk-pattern.png") repeat;
+    min-height: 100vh;
+}
+
+#portfolio h1{
+    color: #444;
+    font-size: 4rem;    
+}
+
+.transparent-box {
+    background-color: rgba(100,100,100,0.4);
+    min-height: 100vh;
+
+}
+
+.text-box {
+    background: linear-gradient(to top right, rgba(200,200,200,0.5), rgba(225,225,225,0.8));
+    height: 30vh;
+    border-radius: 5px;
+    padding: 10vh;
+    /* width: 80vh; */
+
 }
 
 #contact {
-    height: 800px;
+    background: #aaa url("./assets/images/folk-pattern-black.png") repeat;
+    min-height: 100vh;
     background-color: #fff;
 }
 
-#s1{
-    background-image: linear-gradient(to right rgba(255,255,255,0.9), #fefe33);
+#contact h1{
+    color: #aaa;
+    font-size: 4rem;    
 }
 
-#s2{
-    background-image: linear-gradient(to right rgba(255,255,255,0.9), #fabc02);
-    
-}
-
-#s3{
-    background-image: linear-gradient(to right rgba(255,255,255,0.9), #fb9902);
-    
-}
-
-#s4{
-    background-image: linear-gradient(to right rgba(255,255,255,0.9), #fd5308);
-    
-}
-
-#s5{
-    background-image: linear-gradient(to right rgba(255,255,255,0.9), #fe2712);
-    
-}
-
-#s6{
-    background-image: linear-gradient(to right rgba(255,255,255,0.9), #a7194b);
-    
-}
-
-#s7{
-    background-image: linear-gradient(to right rgba(255,255,255,0.9), #8601af);
-    
-}
-
-#s8{
-    background-image: linear-gradient(to right rgba(255,255,255,0.9), #3d01a4);
-    
-}
-
-#s9{
-    background-image: linear-gradient(to right rgba(255,255,255,0.9), #0247fe);
-    
-}
-
-#s10{
-    background-image: linear-gradient(to right rgba(255,255,255,0.9), #0392ce);
-    
-}
-
-#s11{
-    background-image: linear-gradient(to right rgba(255,255,255,0.9), #66b032);
-    
-}
-
-#s12{
-    background-image: linear-gradient(to right rgba(255,255,255,0.9), #d0eab2);
-    
-}
-
-.stripe {
-    min-height: 800px;
-    /* box-shadow: inset -5px 0 5px 5px rgba(0,0,0,0.4); */
-}
-
-.fontAwesome {
-    font-size: 2rem;
-    color : #0a065d;
-}
 
 .nav-link{
-    color: #0a065d;
+    color: #ddd;
     margin-left: 5px;
     font-family: AgeoLight;
 }
 
 .nav-link:hover{
-    color: #0a065d;
-    border-bottom: #0a065d 1px solid;
-    transition: .2s;
+    background-color: #aaa;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
 }
 
 .nav-link:active{
@@ -120,39 +105,54 @@ body{
 }
 
 #firstName {
-    color: #0a065d;
+    color: #ddd;
     font-family: AgeoBold;
 }
 
 #lastName {
-    color: #0a065d;
+    color: #ddd;
     font-family: AgeoLight;
 }
 
 
 .fontAwesome:hover {
-    color: #a3816a;
-    transition: .4s;
-
+    color: #737373;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
 }
 
+.fontAwesome {
+    font-size: 2rem;
+    color : #1b3142;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+}
+
+
 .card {
+    background-color: #eee;
+    margin: 20px;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+}
+
+.card:hover {
     box-shadow: 0 8px 6px -6px black;
-    margin-bottom: 80px;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
 }
 
 .myNav {
     font-size: 2rem;
-    background-image: linear-gradient(to right, #fff, #eee, #0a065d );
-    border-bottom: #0a065d solid 1px;
+    background-image: linear-gradient(to right, #1b3142, #221f1f, #aaa );
+    border-bottom: #aaa solid 1px;
     margin-bottom: 10vh;
 
 }
 
 footer {
     /* font-size: 2rem; */
-    background-image: linear-gradient(to right, #0a065d, #a3816a, #f8f1f1, #a3816a, #0a065d);
-    
+    background-image: linear-gradient(to right, #1b3142, #221f1f, #f8f1f1, #221f1f, #1b3142);
     border-bottom: #222 solid 2px;
     box-shadow: #222;
     position: fixed;
@@ -161,63 +161,63 @@ footer {
     width: 100%;
 }
 
-@media only screen and (min-width: 300px){
-    #portfolio {
-        height: 1500px;
-        background-color: #eee;
+@media only screen and (max-width: 992px){
+    #about-text{
+        font-size: 2rem;
     }
-    #me{
-        width: 13   rem;
-        height: auto;
+    .state{
+        font-size: 1.25rem;
     }
-    .nav-link {
-        font-size: 1rem;
-        color: #0a065d;
-    }
-    .card{
-        width: 250px;
+    .fa-arrow-right, .fa-plus{
+        font-size: 1.25rem;
     }
 }
 
-@media only screen and (min-width: 576px){
+@media only screen and (max-width: 768px){
     .nav-link {
         font-size: 1.25rem;
-        color: #0a065d;
     }
-    #me{
-        width: 13rem;
-        height: auto;
+    #about-text{
+        font-size: 1.5rem;
     }
-    .card{
-        text-align: center;
+    .state{
+        font-size: 1rem;
     }
-}
-
-@media only screen and (min-width: 768px){
-    #about {
-        height: 800px;
-        background-color: #fff;
-    
-    }
-    #portfolio {
-        height: 800px;
-        background-color: #eee;
-        
+    .fa-arrow-right, .fa-plus{
+        font-size: 1rem;
     }
 }
 
-@media only screen and (min-width: 992px){
-    #about {
-        height: 800px;
-        background-color: #fff;
-    
+@media only screen and (max-width: 576px){
+
+    #about-text{
+        font-size: 1rem;
     }
-    .card{
-        width: 18rem;
+    .state{
+        font-size: .8rem;
     }
-    #portfolio {
-        height: 800px;
-        background-color: #eee;
-        
-    }  
+
+    .fa-arrow-right, .fa-plus{
+        font-size: 0.8rem;
+    }
 }
+
+
+@media only screen and (max-width: 457px){
+    /* .nav-link {
+        font-size: 0.5rem;
+    } */
+    /* #about-text{
+        font-size: 0.5rem;
+    }
+    .state{
+        font-size: 0.4rem;
+    }
+    .fa-arrow-right{
+        font-size: 0.4rem;
+    }
+    .text-box {
+        padding: 12vh 50px ;
+    } */
+}
+

@@ -21,3 +21,62 @@
   background-color: #ddd;
   color: black;
 }
+
+#s1{
+  background-image: linear-gradient(to right rgba(255,255,255,0.9), #fefe33);
+}
+
+#s2{
+  background-image: linear-gradient(to right rgba(255,255,255,0.9), #fabc02);
+  
+}
+
+#s3{
+  background-image: linear-gradient(to right rgba(255,255,255,0.9), #fb9902);
+  
+}
+
+#s4{
+  background-image: linear-gradient(to right rgba(255,255,255,0.9), #fd5308);
+  
+}
+
+#s5{
+  background-image: linear-gradient(to right rgba(255,255,255,0.9), #fe2712);
+  
+}
+
+#s6{
+  background-image: linear-gradient(to right rgba(255,255,255,0.9), #a7194b);
+  
+}
+
+#s7{
+  background-image: linear-gradient(to right rgba(255,255,255,0.9), #8601af);
+  
+}
+
+#s8{
+  background-image: linear-gradient(to right rgba(255,255,255,0.9), #3d01a4);
+  
+}
+
+#s9{
+  background-image: linear-gradient(to right rgba(255,255,255,0.9), #0247fe);
+  
+}
+
+#s10{
+  background-image: linear-gradient(to right rgba(255,255,255,0.9), #0392ce);
+  
+}
+
+#s11{
+  background-image: linear-gradient(to right rgba(255,255,255,0.9), #66b032);
+  
+}
+
+#s12{
+  background-image: linear-gradient(to right rgba(255,255,255,0.9), #d0eab2);
+  
+}
