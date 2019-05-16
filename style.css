@@ -1,0 +1,223 @@
+@font-face {
+    font-family: AgeoBold;
+    src: url(./ageo/AgeoPersonalUse-Bold.otf)
+}
+
+@font-face {
+    font-family: AgeoLight;
+    src: url(./ageo/AgeoPersonalUse-Light.otf)
+}
+
+p {
+    color: #0a065d;
+    /* font-size: 10rem; */
+}
+
+body{
+    background-color: #fff;
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#about {
+    height: 800px;
+    width: 100%;
+}
+
+#contact {
+    height: 800px;
+    background-color: #fff;
+}
+
+#s1{
+    background-image: linear-gradient(to right rgba(255,255,255,0.9), #fefe33);
+}
+
+#s2{
+    background-image: linear-gradient(to right rgba(255,255,255,0.9), #fabc02);
+    
+}
+
+#s3{
+    background-image: linear-gradient(to right rgba(255,255,255,0.9), #fb9902);
+    
+}
+
+#s4{
+    background-image: linear-gradient(to right rgba(255,255,255,0.9), #fd5308);
+    
+}
+
+#s5{
+    background-image: linear-gradient(to right rgba(255,255,255,0.9), #fe2712);
+    
+}
+
+#s6{
+    background-image: linear-gradient(to right rgba(255,255,255,0.9), #a7194b);
+    
+}
+
+#s7{
+    background-image: linear-gradient(to right rgba(255,255,255,0.9), #8601af);
+    
+}
+
+#s8{
+    background-image: linear-gradient(to right rgba(255,255,255,0.9), #3d01a4);
+    
+}
+
+#s9{
+    background-image: linear-gradient(to right rgba(255,255,255,0.9), #0247fe);
+    
+}
+
+#s10{
+    background-image: linear-gradient(to right rgba(255,255,255,0.9), #0392ce);
+    
+}
+
+#s11{
+    background-image: linear-gradient(to right rgba(255,255,255,0.9), #66b032);
+    
+}
+
+#s12{
+    background-image: linear-gradient(to right rgba(255,255,255,0.9), #d0eab2);
+    
+}
+
+.stripe {
+    min-height: 800px;
+    /* box-shadow: inset -5px 0 5px 5px rgba(0,0,0,0.4); */
+}
+
+.fontAwesome {
+    font-size: 2rem;
+    color : #0a065d;
+}
+
+.nav-link{
+    color: #0a065d;
+    margin-left: 5px;
+    font-family: AgeoLight;
+}
+
+.nav-link:hover{
+    color: #0a065d;
+    border-bottom: #0a065d 1px solid;
+    transition: .2s;
+}
+
+.nav-link:active{
+    color: #a3816a;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+#firstName {
+    color: #0a065d;
+    font-family: AgeoBold;
+}
+
+#lastName {
+    color: #0a065d;
+    font-family: AgeoLight;
+}
+
+
+.fontAwesome:hover {
+    color: #a3816a;
+    transition: .4s;
+
+}
+
+.card {
+    box-shadow: 0 8px 6px -6px black;
+    margin-bottom: 80px;
+}
+
+.myNav {
+    font-size: 2rem;
+    background-image: linear-gradient(to right, #fff, #eee, #0a065d );
+    border-bottom: #0a065d solid 1px;
+    margin-bottom: 10vh;
+
+}
+
+footer {
+    /* font-size: 2rem; */
+    background-image: linear-gradient(to right, #0a065d, #a3816a, #f8f1f1, #a3816a, #0a065d);
+    
+    border-bottom: #222 solid 2px;
+    box-shadow: #222;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 300px){
+    #portfolio {
+        height: 1500px;
+        background-color: #eee;
+    }
+    #me{
+        width: 13   rem;
+        height: auto;
+    }
+    .nav-link {
+        font-size: 1rem;
+        color: #0a065d;
+    }
+    .card{
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    .nav-link {
+        font-size: 1.25rem;
+        color: #0a065d;
+    }
+    #me{
+        width: 13rem;
+        height: auto;
+    }
+    .card{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #about {
+        height: 800px;
+        background-color: #fff;
+    
+    }
+    #portfolio {
+        height: 800px;
+        background-color: #eee;
+        
+    }
+}
+
+@media only screen and (min-width: 992px){
+    #about {
+        height: 800px;
+        background-color: #fff;
+    
+    }
+    .card{
+        width: 18rem;
+    }
+    #portfolio {
+        height: 800px;
+        background-color: #eee;
+        
+    }  
+}

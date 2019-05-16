@@ -1,0 +1,212 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat;
+}
+p {
+  font-family: Arvo;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: #aaa;
+}
+i {
+  font-size: 2rem;
+}
+
+/* HEADER */
+.header{
+  width: 100%;
+  margin-top: 0;
+  height: 150px;
+  background-color: darkred;
+  border-bottom: black 15px solid;
+  outline: #aaa 5px solid;
+  color: #ddd;
+  display:flex;
+  justify-content: space-between;
+}
+.header h1 {
+  font-size: 3rem;
+  margin: 0px 10px;
+  padding-top: 10px;
+}
+.header h3 {
+  margin-left:  50px;
+}
+.header ul {
+  list-style-position: outside;
+}
+.contact{
+  padding: 10px 10px 0 0 ;
+}
+.contact p {
+  margin: 0;
+}
+.font-awesome-links{
+  /* position: absolute; */
+  
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding:  0px 10px 0 0 ;
+
+}
+/* ****************************** */
+.mainHeader{
+  margin-left: 3%;
+}
+#page-wrapper { 
+  display: flex;
+}
+/* SIDE CONTENT */
+.sideContent {
+  /* min-width: 200px; */
+  min-height: 100%;
+  background-color: #aaa;
+}
+.skill-block {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.skill {
+  font-size: .9rem;
+  font-family: Arvo;
+  text-align: center;
+  background-color: #ccc;
+  border-bottom: #444 1px solid; 
+  margin: 5px 0px 0px 0px;
+}
+/* ****************************** */
+
+/* MAIN CONTENT */
+.mainContent {
+  /* margin-left: 20px; */
+
+}  
+.experience {
+  /* margin-left: 20px; */
+
+}
+.stint {
+  border: #aaa solid 1px;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  width: 90%;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-shadow: -5px 5px 0px 1px #ddd;
+  border-radius: 1px;
+}
+.heading {
+  font-weight: 700;
+}
+.role {
+  font-style: italic;
+  text-decoration: underline;
+  font-family: Arvo;
+  font-size: .95rem;  
+}
+.overview {
+  font-weight: lighter;
+  font-size: .85rem;
+  text-align: justify;
+}
+.stintLength{
+  float: right;
+}
+.company{
+  font-family: Arvo;
+}
+.location{
+  margin-left: 10px;
+  font-size: 80%;
+}
+.education {
+  margin-bottom:10vh;
+}
+.education p {
+  font-weight: lighter;
+}
+.edu-location{
+  float:right;
+  font-weight: 700;
+}
+#edu-inset {
+  margin-left: 10px;
+}
+#pub-heading {
+  font-family: Arvo;
+  font-size: .9rem;
+}
+#pub{
+  font-style: italic;
+  font-size: .8rem;
+}
+/* ****************************** */
+/* FOOTER */
+.footer {
+  background-color: darkred;
+  height: 100px;
+  border: 1px solid black;
+}
+/* ****************************** */
+
+@media only screen and (max-width: 300px){
+
+}
+@media only screen and (max-width: 576px){
+  .mainContent{
+    width: 90%;
+  }
+  #page-wrapper {
+    display: block;
+  }
+  .header h1 {
+    font-size: 2rem;
+    margin: 0px 5px;
+    padding-top: 5px;
+  }
+  .header h3 {
+    margin-left:  20px;
+  }
+  .sideContent h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    /* font-weight: 1000; */
+  }
+  .sideContent h4 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .skill-block{
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+  .skill{
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+
+  }
+}
+@media only screen and (max-width: 768px){
+}
+@media only screen and (max-width: 992px){
+}
