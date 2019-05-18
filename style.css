@@ -126,6 +126,7 @@ a:hover{
     color : #1b3142;
     transition-duration: 250ms;
     transition-timing-function: ease-in;
+    margin: 0 20px 0 20px;
 }
 
 
@@ -134,12 +135,21 @@ a:hover{
     margin: 20px;
     transition-duration: 250ms;
     transition-timing-function: ease-in;
+    max-width: 400px;
 }
 
 .card:hover {
     box-shadow: 0 8px 6px -6px black;
     transition-duration: 250ms;
     transition-timing-function: ease-in;
+}
+
+.fa-code {
+    float: left;
+}
+
+.fa-link {
+    float: right;
 }
 
 .myNav {
@@ -152,7 +162,7 @@ a:hover{
 
 footer {
     /* font-size: 2rem; */
-    background-image: linear-gradient(to right, #1b3142, #221f1f, #f8f1f1, #221f1f, #1b3142);
+    background-image: linear-gradient(to right, #1b3142, #f8f1f1, #1b3142);
     border-bottom: #222 solid 2px;
     box-shadow: #222;
     position: fixed;
@@ -186,6 +196,9 @@ footer {
     .fa-arrow-right, .fa-plus{
         font-size: 1rem;
     }
+    .fa-link, .fa-code{
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (max-width: 576px){
@@ -200,14 +213,17 @@ footer {
     .fa-arrow-right, .fa-plus{
         font-size: 0.8rem;
     }
+    .fontAwesome {
+        margin: 0 10px 0
+    }
 }
 
 
 @media only screen and (max-width: 457px){
     /* .nav-link {
         font-size: 0.5rem;
-    } */
-    /* #about-text{
+    }
+    #about-text{
         font-size: 0.5rem;
     }
     .state{
@@ -215,8 +231,8 @@ footer {
     }
     .fa-arrow-right{
         font-size: 0.4rem;
-    }
-    .text-box {
+    } */
+    /* .text-box {
         padding: 12vh 50px ;
     } */
 }

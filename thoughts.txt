@@ -1,6 +1,0 @@
-Thoughts: 
-
-For my portfolio I should probably keep my images to a min/max-width of 300px;
-  This way I can assure that they will look good all the way down to a 300px view-width screen and I can display them circa 100% 
-  A card may be better to set to a max-width of 300px; then inside the card we have our images be a max-width of 250px and then 
-  position them within the box appropriately. Auto margins always looks clean but some assymetric styling will be eye-catching and unique
