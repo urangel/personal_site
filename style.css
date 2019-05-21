@@ -22,16 +22,16 @@ body{
 a:hover{
 	text-decoration: none;
 }
-#about {
+#home {
     background: #ccc url("./assets/images/wheat.png") repeat;
     min-height: 100vh;
 }
 
-#about h1{
+#home h1{
     color: #222;
 }
 
-#about-text{
+#home-text{
     font-family: Garamond;
 }
 
@@ -45,6 +45,20 @@ a:hover{
     font-family: Garaomnd;
 
     font-weight: bold;
+}
+
+#about {
+    background: #ccc url("./assets/images/prism.png") repeat;
+    min-height: 100vh;
+    color: #ddd;
+}
+
+#about p {
+    color: #ddd;
+}
+
+#about hr {
+    background-color: #ddd;
 }
 
 #portfolio {
@@ -88,6 +102,7 @@ a:hover{
     color: #ddd;
     margin-left: 5px;
     font-family: AgeoLight;
+    font-size: 1.5rem;
 }
 
 .nav-link:hover{
@@ -127,6 +142,7 @@ a:hover{
     transition-duration: 250ms;
     transition-timing-function: ease-in;
     margin: 0 20px 0 20px;
+    padding: 10px 0;
 }
 
 
@@ -157,8 +173,16 @@ a:hover{
     background-image: linear-gradient(to right, #1b3142, #221f1f, #aaa );
     border-bottom: #aaa solid 1px;
     margin-bottom: 10vh;
-
 }
+
+#validation-message{
+    display: none;
+}
+
+#validation-text{
+    color: #ddd;
+}
+
 
 footer {
     /* font-size: 2rem; */
@@ -172,7 +196,7 @@ footer {
 }
 
 @media only screen and (max-width: 992px){
-    #about-text{
+    #home-text{
         font-size: 2rem;
     }
     .state{
@@ -187,7 +211,7 @@ footer {
     .nav-link {
         font-size: 1.25rem;
     }
-    #about-text{
+    #home-text{
         font-size: 1.5rem;
     }
     .state{
@@ -203,7 +227,7 @@ footer {
 
 @media only screen and (max-width: 576px){
 
-    #about-text{
+    #home-text{
         font-size: 1rem;
     }
     .state{
@@ -223,7 +247,7 @@ footer {
     /* .nav-link {
         font-size: 0.5rem;
     }
-    #about-text{
+    #home-text{
         font-size: 0.5rem;
     }
     .state{

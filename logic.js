@@ -15,17 +15,37 @@ $( document ).ready(function() {
   $("#message-submit").on("click", function(e){
     e.preventDefault();
 
-    let message = {
-      name: $("#contact-name-input").val(),
-      email: $("#contact-email-input").val(),
-      message: $("#contact-message-input").val()
+    if($("#contact-name-input").val() === "" || $("#contact-email-input").val() === "" || $("#contact-message-input").val() === ""){
+      $("#validation-message").show();
+    }
+    else{
+      let message = {
+        name: $("#contact-name-input").val(),
+        email: $("#contact-email-input").val(),
+        message: $("#contact-message-input").val()
+      }
+  
+      firebase.database().ref().push(message);
+  
+      $("#validation-text").text("Message sent!");
+      $("#validation-message").show();
+      $("#contact-name-input").val("");
+      $("#contact-email-input").val("");
+      $("#contact-message-input").val("");
     }
 
-    firebase.database().ref().push(message);
+    
+  });
 
+  $(".collapse a[href^='#']").on("click", function(e) {
+    e.preventDefault();
+    let hash = this.hash;
+ 
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+    }, 1000, function(){
+      window.location.hash = hash;
+    });
+});
 
-    $("#contact-name-input").val("");
-    $("#contact-email-input").val("");
-    $("#contact-message-input").val("");
-  })
 });
