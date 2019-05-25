@@ -10,6 +10,7 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
+let flipped = true;
 
 $( document ).ready(function() {
   $("#message-submit").on("click", function(e){
@@ -35,6 +36,16 @@ $( document ).ready(function() {
     }
 
     
+  });
+
+  $(".fa-arrow-alt-circle-right").on("click", function() {
+    if (!flipped){
+      $(this).closest(".flip-card-inner").css("transform", "rotateY(180deg)");
+      flipped = !flipped;
+    } else{
+      $(this).closest(".flip-card-inner").css("transform", "rotateY(0deg)");
+      flipped = !flipped;
+    }
   });
 
   $(".collapse a[href^='#']").on("click", function(e) {

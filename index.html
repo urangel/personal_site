@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
   <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
 
@@ -43,6 +42,9 @@
   </header>
 
   <div id="home" class="container-fluid d-flex justify-content-center align-items-center">
+    <video autoplay muted loop id="myVideo">
+      <source src="./assets/images/Rainy Weather At The Field.mp4" type="video/mp4">
+    </video>
     <div class="text-box d-flex justify-content-center align-items-center">
         <h1 id="home-text">
           Chemist 
@@ -72,152 +74,242 @@
   </div>
 
   <div id="portfolio">
-    <div class="transparent-box">
 
-    <div class="container-fluid">
-      <h1 class="text-center">Projects</h1>
-      <div class="row">
+  <div class="container-fluid">
+    <h1 class="text-center">Portfolio</h1>
+    <div class=" d-flex flex-wrap justify-content-around" style="margin-bottom: 100px">
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-12 ">
-          <div class="card">
-            <img class="card-img-top" src="./assets/images/portfolio_thumbnails/skillworx.png" alt="Card image cap">
-            <div class="card-body text-center">
-              <p class="card-text">SkillWorx</p>
-              <a href="https://github.com/Barbi105/project3" target="_blank">
-                <i class="fa fa-code" aria-hidden="true"></i>
-              </a>
-              <a href="https://skillworx.herokuapp.com/" target="_blank">
-                <i class="fa fa-link" aria-hidden="true"></i>
-              </a>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/images/portfolio_thumbnails/skillworx.png" alt="SkillWorx" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>SkillWorx</h2>
+            <p>Get help with your tasks with SkillWorx! A site built on the MERN stack including full CRUD functionality as well as user authentication.</p>
+            <span>
+              <span class="badge badge-dark">MongoDB</span>
+              <span class="badge badge-dark">Express</span>
+              <span class="badge badge-dark">React</span>
+              <span class="badge badge-dark">Node</span>
+              <span class="badge badge-dark">Bcrypt</span>
+              <span class="badge badge-dark">Passport</span>
+              <span class="badge badge-dark">BootStrap</span>
+            </span>
+            <br>
+            <a href="https://github.com/Barbi105/project3" target="_blank">
+              <i class="fa fa-code" aria-hidden="true"></i>
+            </a>
+            <a href="https://skillworx.herokuapp.com/" target="_blank">
+              <i class="fa fa-link" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-12 ">
-          <div class="card">
-            <img class="card-img-top" src="./assets/images/portfolio_thumbnails/strayTX.png" alt="Card image cap">
-            <div class="card-body text-center">
-              <p class="card-text">StrayTX</p>
-              <a href="https://github.com/derekgeorg/project2" target="_blank">
-                <i class="fa fa-code" aria-hidden="true"></i>
-              </a>
-              <a href="https://straytx.herokuapp.com/" target="_blank">
-                <i class="fa fa-link" aria-hidden="true"></i>
-              </a>
-
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/images/portfolio_thumbnails/strayTX.png" alt="StrayTX" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>StrayTX</h2> 
+            <p>Find your lost pets with StrayTX! Data focused StrayTX uses MySQL in tandem with the sequelize ORM. CRUD actions are available to authenticated users.</p>
+            <span>
+              <span class="badge badge-dark">MySQL</span>
+              <span class="badge badge-dark">Sequelize</span>
+              <span class="badge badge-dark">Express</span>
+              <span class="badge badge-dark">express-session</span>
+              <span class="badge badge-dark">Node</span>
+              <span class="badge badge-dark">bcrypt</span>
+              <span class="badge badge-dark">Passport</span>
+              <span class="badge badge-dark">dotenv</span>
+              <span class="badge badge-dark">BootStrap</span>
+            </span>
+            <br>
+            <a href="https://github.com/derekgeorg/project2" target="_blank">
+              <i class="fa fa-code" aria-hidden="true"></i>
+            </a>
+            <a href="https://straytx.herokuapp.com/" target="_blank">
+              <i class="fa fa-link" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-12 ">
-          <div class="card">
-              <img class="card-img-top" src="./assets/images/portfolio_thumbnails/z_o_lite.jpg" alt="Card image cap">
-              <div class="card-body text-center">
-                <p class="card-text">Z-O-LITE</p>
-                <a href="https://github.com/urangel/z-o-lite" target="_blank">
-                  <i class="fa fa-code" aria-hidden="true"></i>
-                </a>
-                <a href="https://urangel.github.io/z-o-lite/" target="_blank">
-                  <i class="fa fa-link" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-12 ">
-          <div class="card">
-            <img class="card-img-top" src="./assets/images/portfolio_thumbnails/for_gif_about_it.jpg" alt="Card image cap">
-            <div class="card-body text-center">
-              <p class="card-text">For Gif About It!</p>
-              <a href="https://github.com/urangel/ForGifAboutIt" target="_blank">
-                <i class="fa fa-code" aria-hidden="true"></i>
-              </a>
-              <a href="https://urangel.github.io/ForGifAboutIt/" target="_blank">
-                <i class="fa fa-link" aria-hidden="true"></i>
-              </a>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/images/portfolio_thumbnails/z_o_lite.jpg" alt="Z-O-LITE" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Z-O-LITE</h2> 
+            <p>Shuffle game. Written to get acquainted with React including working with components, component life-cycle, props, and ES6.</p>
+            <span>
+              <span class="badge badge-dark">React</span>
+              <span class="badge badge-dark">Node</span>
+              <span class="badge badge-dark">BootStrap</span>
+            </span>
+            <br>
+            <a href="https://github.com/urangel/z-o-lite" target="_blank">
+              <i class="fa fa-code" aria-hidden="true"></i>
+            </a>
+            <a href="https://urangel.github.io/z-o-lite/" target="_blank">
+              <i class="fa fa-link" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-12 ">
-          <div class="card">
-            <img class="card-img-top" src="./assets/images/portfolio_thumbnails/liri.jpg" alt="Card image cap">
-            <div class="card-body text-center">
-              <p class="card-text">Liri</p>
-              <a href="https://github.com/urangel/liri" target="_blank">
-                <i class="fa fa-code" aria-hidden="true"></i>
-              </a>
-              <a href="https://drive.google.com/file/d/11skhYBP1YyQLMEUQBGURH3fztbJfQa8E/view" target="_blank">
-                <i class="fa fa-link" aria-hidden="true"></i>
-              </a>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/images/portfolio_thumbnails/for_gif_about_it.jpg" alt="ForGifAboutIt" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>For Gif About It!</h2> 
+            <p>Find your favorite gifs. This site demonstrates working with Giphy's API, promises, dynamic content creation, event delegation, and DOM maniuplation with jQuery.</p>
+            <span>
+              <span class="badge badge-dark">JavaScript</span>
+              <span class="badge badge-dark">jQuery</span>
+              <span class="badge badge-dark">GitHub</span>
+              <span class="badge badge-dark">CSS</span>
+              <span class="badge badge-dark">HTML</span>
+              <span class="badge badge-dark">BootStrap</span>
+            </span>
+            <br>
+            <a href="https://github.com/urangel/ForGifAboutIt" target="_blank">
+              <i class="fa fa-code" aria-hidden="true"></i>
+            </a>
+            <a href="https://urangel.github.io/ForGifAboutIt/" target="_blank">
+              <i class="fa fa-link" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-12 ">
-          <div class="card">
-            <img class="card-img-top" src="./assets/images/portfolio_thumbnails/BBQ.jpg" alt="Card image cap">
-            <div class="card-body text-center">
-              <p class="card-text">BBQ</p>
-              <a href="https://github.com/urangel/BBQ" target="_blank">
-                <i class="fa fa-code" aria-hidden="true"></i>
-              </a>
-              <a href="https://polar-shore-72390.herokuapp.com/" target="_blank">
-                <i class="fa fa-link" aria-hidden="true"></i>
-              </a>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/images/portfolio_thumbnails/database_dive.jpg" alt="Database Dive" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Database Dive</h2> 
+            <p>A cli-based shop. MySQL is used to create a shop that different levels of users interact with. Node modules are used to segment functionality. </p>
+            <span>
+              <span class="badge badge-dark">MySQL</span>
+              <span class="badge badge-dark">Node</span>
+              <span class="badge badge-dark">Inquirer</span>
+            </span>
+            <br>
+            <a href="https://github.com/urangel/databaseDive" target="_blank">
+              <i class="fa fa-code" aria-hidden="true"></i>
+            </a>
+            <a href="https://drive.google.com/file/d/1Mixj_cAy_filgXT_OoR9tIzHXEtmUGaN/view" target="_blank">
+              <i class="fa fa-link" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-12 ">
-          <div class="card">
-            <img class="card-img-top" src="./assets/images/portfolio_thumbnails/friend_finder.jpg" alt="Card image cap">
-            <div class="card-body text-center">
-              <p class="card-text">Friend Finder</p>
-              <a href="https://github.com/urangel/friend_finder" target="_blank">
-                <i class="fa fa-code" aria-hidden="true"></i>
-              </a>
-              <a href="https://fast-sea-95437.herokuapp.com/" target="_blank">
-                <i class="fa fa-link" aria-hidden="true"></i>
-              </a>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/images/portfolio_thumbnails/BBQ.jpg" alt="BBQ" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>BBQ</h2> 
+            <p>Eat the best barbecue with BBQ! This site allows one to keep a list of restaurants they would like to eat at. A full range of CRUD actions are available.</p>
+            <span>
+              <span class="badge badge-dark">MySQL</span>
+              <span class="badge badge-dark">Express</span>
+              <span class="badge badge-dark">Heroku</span>
+              <span class="badge badge-dark">BootStrap</span>
+              <span class="badge badge-dark">HTML</span>
+              <span class="badge badge-dark">CSS</span>
+              <span class="badge badge-dark">JavaScript</span>
+            </span>
+            <br>
+            <a href="https://github.com/urangel/BBQ" target="_blank">
+              <i class="fa fa-code" aria-hidden="true"></i>
+            </a>
+            <a href="https://polar-shore-72390.herokuapp.com/" target="_blank">
+              <i class="fa fa-link" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-12 ">
-          <div class="card">
-            <img class="card-img-top" src="./assets/images/portfolio_thumbnails/trivia_game.jpg" alt="Card image cap">
-            <div class="card-body text-center">
-              <p class="card-text">Trivia</p>
-              <a href="https://github.com/urangel/TriviaGame" target="_blank">
-                <i class="fa fa-code" aria-hidden="true"></i>
-              </a>
-              <a href="https://urangel.github.io/TriviaGame/" target="_blank">
-                <i class="fa fa-link" aria-hidden="true"></i>
-              </a>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/images/portfolio_thumbnails/friend_finder.jpg" alt="Friend Finder" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Friend Finder</h2> 
+            <p>Take a survey to find your next best friend! An API is established full of 'friends' and their values. A matchmaking algorithm returns the best match.</p>
+            <span>
+              <span class="badge badge-dark">Node</span>
+              <span class="badge badge-dark">Express</span>
+              <span class="badge badge-dark">jQuery</span>
+              <span class="badge badge-dark">BootStrap</span>
+              <span class="badge badge-dark">HTML</span>
+              <span class="badge badge-dark">CSS</span>
+              <span class="badge badge-dark">JavaScript</span>
+            </span>
+            <br>
+            <a href="https://github.com/urangel/friend_finder" target="_blank">
+              <i class="fa fa-code" aria-hidden="true"></i>
+            </a>
+            <a href="https://fast-sea-95437.herokuapp.com/" target="_blank">
+              <i class="fa fa-link" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
-          
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/images/portfolio_thumbnails/trivia_game.jpg" alt="Trivia" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Trivia</h2> 
+            <p>Can you get them all? jQuery is used to create a timed quiz. DOM manipulation, timers, and counters string it all together.</p>
+            <span>
+              <span class="badge badge-dark">jQuery</span>
+              <span class="badge badge-dark">JavaScript</span>
+              <span class="badge badge-dark">HTML</span>
+              <span class="badge badge-dark">CSS</span>
+            </span>
+            <br>
+            <a href="https://github.com/urangel/TriviaGame" target="_blank">
+              <i class="fa fa-code" aria-hidden="true"></i>
+            </a>
+            <a href="https://urangel.github.io/TriviaGame/" target="_blank">
+              <i class="fa fa-link" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+
   </div>
 
   <div id="contact">
     <h1 class="text-center">Contact</h1>
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div id="contact-form" class="col-12">
           <form >
               <div class="form-group">
-                <label style="color: #ddd" for="contact-name-input">Name</label>
+                <label style="color: #fff" for="contact-name-input">Name</label>
                 <input type="text" class="form-control" id="contact-name-input" placeholder="First Last">
-                <label style="color: #ddd" for="contact-email-input">Email address</label>
+                <label style="color: #fff" for="contact-email-input">Email address</label>
                 <input type="email" class="form-control" id="contact-email-input" placeholder="name@example.com">
-                <label style="color: #ddd" for="contact-message-input">Message</label>
+                <label style="color: #fff" for="contact-message-input">Message</label>
                 <textarea class="form-control" id="contact-message-input" rows="4"></textarea>
-                <hr>
+                <hr style="background-color: #fff">
                 <div>
                   <button id="message-submit" class="btn btn-secondary float-left">Submit</button>
                   <div id="validation-message">

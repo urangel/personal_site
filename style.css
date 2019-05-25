@@ -7,12 +7,9 @@
     font-family: AgeoLight;
     src: url(./assets/fonts/ageo/AgeoPersonalUse-Light.otf)
 }
-
 p {
     color: #0a065d;
-    /* font-size: 10rem; */
 }
-
 body{
     background-color: #fff;
     position: relative;
@@ -22,120 +19,203 @@ body{
 a:hover{
 	text-decoration: none;
 }
-#home {
-    background: #ccc url("./assets/images/wheat.png") repeat;
-    min-height: 100vh;
+/* NAVBAR */
+.myNav {
+    font-size: 2rem;
+    background-image: linear-gradient(to right, #061d24, #aaa );
+    border-bottom: #aaa solid 1px;
+    margin-bottom: 10vh;
 }
-
-#home h1{
-    color: #222;
-}
-
-#home-text{
-    font-family: Garamond;
-}
-
-.fa-arrow-right, .fa-plus{
-    font-size: 1.5rem;
-}
-
-.state {
-    font-style: italic;
-    font-size: 1.5rem;
-    font-family: Garaomnd;
-
-    font-weight: bold;
-}
-
-#about {
-    background: #ccc url("./assets/images/prism.png") repeat;
-    min-height: 100vh;
-    color: #ddd;
-}
-
-#about p {
-    color: #ddd;
-}
-
-#about hr {
-    background-color: #ddd;
-}
-
-#portfolio {
-    background: #aaa url("./assets/images/folk-pattern.png") repeat;
-    min-height: 100vh;
-}
-
-#portfolio h1{
-    color: #444;
-    font-size: 4rem;    
-}
-
-.transparent-box {
-    background-color: rgba(100,100,100,0.4);
-    min-height: 100vh;
-
-}
-
-.text-box {
-    background: linear-gradient(to top right, rgba(200,200,200,0.5), rgba(225,225,225,0.8));
-    height: 30vh;
-    border-radius: 5px;
-    padding: 10vh;
-    /* width: 80vh; */
-
-}
-
-#contact {
-    background: #aaa url("./assets/images/folk-pattern-black.png") repeat;
-    min-height: 100vh;
-    background-color: #fff;
-}
-
-#contact h1{
-    color: #aaa;
-    font-size: 4rem;    
-}
-
-
 .nav-link{
     color: #ddd;
     margin-left: 5px;
     font-family: AgeoLight;
     font-size: 1.5rem;
 }
-
 .nav-link:hover{
     background-color: #aaa;
     transition-duration: 250ms;
     transition-timing-function: ease-in;
 }
-
 .nav-link:active{
     color: #a3816a;
 }
-
 .navbar-brand {
     font-size: 2rem;
 }
-
 #firstName {
     color: #ddd;
     font-family: AgeoBold;
 }
-
 #lastName {
     color: #ddd;
     font-family: AgeoLight;
 }
+/* ========================================= */
 
-
+/* HOME SECTION */
+#home {
+    /* background: #ccc url("./assets/images/wheat.png") repeat; */
+    min-height: 100vh;
+}
+#myVideo {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+#home h1{
+    color: #222;
+}
+#home-text{
+    font-family: Garamond;
+}
+.text-box {
+    background: linear-gradient(to top right, rgba(200,200,200,0.5), rgba(225,225,225,0.8));
+    height: 30vh;
+    border-radius: 5px;
+    padding: 10vh;
+    /* width: 80vh; */
+}
+.fa-arrow-right, .fa-plus{
+    font-size: 1.5rem;
+}
+.state {
+    font-style: italic;
+    font-size: 1.5rem;
+    font-family: Garaomnd;
+    font-weight: bold;
+}
+/* ========================================= */
+/* ABOUT SECTION */
+#about {
+    background: #ccc url("./assets/images/prism.png") repeat;
+    min-height: 100vh;
+    color: #ddd;
+}
+#about p {
+    color: #ddd;
+}
+#about hr {
+    background-color: #ddd;
+}
+/* ========================================= */
+/* PORTFOLIO SECTION */
+#portfolio {
+    background: #aaa url("./assets/images/wheat.png") repeat;
+    min-height: 100vh;
+}
+#portfolio h1{
+    color: #ddd;
+    font-size: 4rem;    
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    transition-duration: 750ms;
+    transition-timing-function: ease-in-out;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    transition-duration: 750ms;
+    transition-timing-function: ease-in-out;
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+.flip-card-back {
+    background: linear-gradient(to bottom, rgba(225,225,225,0.8),rgba(200,200,200,0.5));
+    color: #222;
+    transform: rotateY(180deg);
+}
+.flip-card-back p{
+    color: #222;
+}
+.fa-code {
+    float: left;
+    padding-left: 50px;
+}
+.fa-link {
+    float: right;
+    padding-right: 50px;
+}
+.fa-code,.fa-link{
+    padding-top: 25px;
+    font-size: 2rem;
+    color: #061d24;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+}
+.fa-code:hover,.fa-link:hover{
+    font-size: 2.25rem;
+    color: rgb(48, 103, 119);
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+}
+.transparent-box {
+    background-color: rgba(100,100,100,0.4);
+    min-height: 100vh;
+}
+/* ========================================= */
+/* CONTACT SECTION */
+#contact {
+    background: url("./assets/images/black-coffee.jpg") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: #fff;
+}
+#contact h1{
+    color: #444;
+    font-size: 4rem;    
+}
+#contact-form {
+    background-color: rgba(25,25,25,0.75);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+#validation-message{
+    display: none;
+}
+#validation-text{
+    color: #fff;
+}
+/* ========================================= */
+/* FOOTER */
+footer {
+    /* font-size: 2rem; */
+    background-image: linear-gradient(to right, #061d24, #f8f1f1, #061d24);
+    border-bottom: #222 solid 2px;
+    box-shadow: #222;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
 .fontAwesome:hover {
     color: #737373;
     transition-duration: 250ms;
     transition-timing-function: ease-in;
 }
-
 .fontAwesome {
     font-size: 2rem;
     color : #1b3142;
@@ -144,56 +224,7 @@ a:hover{
     margin: 0 20px 0 20px;
     padding: 10px 0;
 }
-
-
-.card {
-    background-color: #eee;
-    margin: 20px;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in;
-    max-width: 400px;
-}
-
-.card:hover {
-    box-shadow: 0 8px 6px -6px black;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in;
-}
-
-.fa-code {
-    float: left;
-}
-
-.fa-link {
-    float: right;
-}
-
-.myNav {
-    font-size: 2rem;
-    background-image: linear-gradient(to right, #1b3142, #221f1f, #aaa );
-    border-bottom: #aaa solid 1px;
-    margin-bottom: 10vh;
-}
-
-#validation-message{
-    display: none;
-}
-
-#validation-text{
-    color: #ddd;
-}
-
-
-footer {
-    /* font-size: 2rem; */
-    background-image: linear-gradient(to right, #1b3142, #f8f1f1, #1b3142);
-    border-bottom: #222 solid 2px;
-    box-shadow: #222;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
+/* ========================================= */
 
 @media only screen and (max-width: 992px){
     #home-text{
@@ -226,7 +257,12 @@ footer {
 }
 
 @media only screen and (max-width: 576px){
-
+    .flip-card {
+        margin: 20px 0px;
+    }
+    #portfolio .container-fluid{
+        padding:0;
+    }
     #home-text{
         font-size: 1rem;
     }
@@ -244,20 +280,5 @@ footer {
 
 
 @media only screen and (max-width: 457px){
-    /* .nav-link {
-        font-size: 0.5rem;
-    }
-    #home-text{
-        font-size: 0.5rem;
-    }
-    .state{
-        font-size: 0.4rem;
-    }
-    .fa-arrow-right{
-        font-size: 0.4rem;
-    } */
-    /* .text-box {
-        padding: 12vh 50px ;
-    } */
+    
 }
-

@@ -80,3 +80,62 @@
   background-image: linear-gradient(to right rgba(255,255,255,0.9), #d0eab2);
   
 }
+
+.card {
+  background-color: #eee;
+  /* margin: 20px; */
+  transition-duration: 250ms;
+  transition-timing-function: ease-in;
+  /* max-width: 400px; */
+}
+.card:hover {
+  box-shadow: 0 8px 6px -6px black;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in;
+}
+.my-card-body{
+  background-color: #ccc;
+}
+.flip-card {
+  max-width: 500px;
+  flex-basis: 20%;
+  background-color: transparent;
+  min-width: 200px;
+  min-height: 200px;
+  perspective: 1000px;
+  
+}
+
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+/* text-align: center; */
+transition: transform 0.6s;
+transform-style: preserve-3d;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* .flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+} */
+
+.card-front, .card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+
+.card-front .card-body{
+background-color: #ccc;
+}
+
+.card-back {
+background: linear-gradient(to bottom, rgba(50,50,50,0.5), rgba(25,25,25,1));
+color: white;
+transform: rotateY(180deg);
+}
+.card-back p, .card-back a{
+  color: #eee;
+}
