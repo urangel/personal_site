@@ -7,6 +7,43 @@
   font-family: AgeoLight;
   src: url(./assets/fonts/ageo/AgeoPersonalUse-Light.otf)
 }
+@keyframes appear {
+  from {opacity: 0; filter: blur(2rem);}
+  to {opacity: 1; filter: blur(0);}
+}
+html{
+  scroll-behavior: smooth;
+}
+.appear{
+  animation: appear 3s ease-in-out;
+}
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+@keyframes bounce {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-5px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-2px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
+}
+#blurb{
+  opacity: 0;
+}
+#scroll-button{
+  animation: bounce 2s infinite;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  cursor: pointer;
+  color: rgb(112, 18, 23);
+  margin: 0 auto 0 auto;
+  background-color: #fff;
+  height: 25px;
+  width: 25px;
+}
+
 .myNav {
   font-size: 2rem;
   background-color: #eee;
@@ -126,7 +163,7 @@ body {
 
 #portfolio {
   /* max-width: 1200px; */
-  padding-top: 50px;
+  padding-top: 100px;
 }
 #portfolio h1 {
   padding-bottom: 20px;

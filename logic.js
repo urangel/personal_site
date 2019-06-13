@@ -1,21 +1,15 @@
-let menu = document.getElementsByClassName("navbar-toggler");
-let navCollapse = document.getElementsByClassName("navbar-collapse");
-let button = document.getElementsByTagName("button");
+let blurb = document.getElementById("blurb");
+let scrollButton = document.getElementById("scroll-button");
+let portfolio = document.getElementById("portfolio");
 
-window.onclick = function(e){
-  // e.preventDefault();
-  if(event.target == menu){
-    menu.classList.add("collapsed");
-    navCollapse.classList.remove("show");
-  }
+window.onload = () => {
+  blurb.classList.add("appear");
+  blurb.style.opacity = "1";
+}
+
+function scroll() {
+  portfolio.scrollIntoView();
+}
+scrollButton.onclick = () => {
+  scroll();
 };
-
-button.onclick = function(e){
-  // e.preventDefault();
-  console.log(event.target);
-}
-
-var logger = function(e) {
-  console.log(event.target);
-}
-
