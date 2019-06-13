@@ -1,284 +1,179 @@
 @font-face {
-    font-family: AgeoBold;
-    src: url(./assets/fonts/ageo/AgeoPersonalUse-Bold.otf)
+  font-family: AgeoBold;
+  src: url(./assets/fonts/ageo/AgeoPersonalUse-Bold.otf)
 }
 
 @font-face {
-    font-family: AgeoLight;
-    src: url(./assets/fonts/ageo/AgeoPersonalUse-Light.otf)
+  font-family: AgeoLight;
+  src: url(./assets/fonts/ageo/AgeoPersonalUse-Light.otf)
 }
-p {
-    color: #0a065d;
-}
-body{
-    background-color: #fff;
-    position: relative;
-    height: 100%;
-    overflow-y: scroll;
-}
-a:hover{
-	text-decoration: none;
-}
-/* NAVBAR */
 .myNav {
-    font-size: 2rem;
-    background-image: linear-gradient(to right, #061d24, #aaa );
-    border-bottom: #aaa solid 1px;
-    margin-bottom: 10vh;
+  font-size: 2rem;
+  background-color: #eee;
+  /* background-image: linear-gradient(to right, #061d24, #aaa ); */
+  border-bottom: #aaa solid 1px;
 }
-.nav-link{
-    color: #ddd;
-    margin-left: 5px;
-    font-family: AgeoLight;
-    font-size: 1.5rem;
+.navbar-toggler{
+  background-color: rgb(112, 18, 23);
 }
-.nav-link:hover{
-    background-color: #aaa;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in;
+.navbar-toggler-icon{
+  background-color: rgb(112, 18, 23);
 }
-.nav-link:active{
-    color: #a3816a;
+.navbar-collapse{
+  display: flex;
+  justify-content: flex-end;
 }
 .navbar-brand {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 #firstName {
-    color: #ddd;
-    font-family: AgeoBold;
+  color: rgb(112, 18, 23);
+  font-family: AgeoBold;
 }
 #lastName {
-    color: #ddd;
-    font-family: AgeoLight;
+  color: rgb(112, 18, 23);
+  font-family: AgeoLight;
 }
-/* ========================================= */
 
-/* HOME SECTION */
-#home {
-    /* background: #ccc url("./assets/images/wheat.png") repeat; */
-    min-height: 100vh;
+.fontAwesome {
+  color: rgb(112, 18, 23);
+  padding-left: 10px;
+}
+
+.tarjeta{
+  position: relative;
+  width: 90%;
+  margin: 10px auto 40px auto;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  box-shadow: -2px 2px 1px 0px rgba(0,0,0,0.25);
+  padding: 20px;
+}
+.description{
+  max-width: 50%;
+}
+.hex-pattern {
+  height: 25px;
+  width: auto;
+  margin: 0;
+  padding:0;
+}
+h2{
+  margin-bottom:0;
+}
+.hex-border {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-color: rgb(112, 18, 23);
+  margin: 10px auto;
+  height: 220px;
+  width: 220px;      
+}
+.hexagon {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  margin: 10px auto;
+  height: 200px;
+  width: 200px;      
+}
+
+.small-hexagon {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-color: #ddd;
+  margin: 10px;
+  height: 50px;
+  width: 50px;      
+}
+/* .small-hexagon:hover{
+  background-color: rgb(112, 18, 23); 
+} */
+.project-links a {
+  color: rgb(112, 18, 23);
+}
+.project-links a:hover .small-hexagon{
+  background-color: rgb(112, 18, 23); 
+}
+
+.project-links a:hover {
+  color: #ddd;
+}
+
+.badge, .btn{
+  border-radius: 1px;
+}
+.badge-list{
+  max-width: 50%;
+}
+
+body {
+  /* margin-top: 100px; */
+}
+#about {
+  color: #fff;
+  height: 100vh;
+  position: relative;
+  box-shadow: 0px 5px 25px 20px rgba(0,0,0,0.25); 
 }
 #myVideo {
-    z-index: -1;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-  }
-#home h1{
-    color: #222;
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
 }
-#home-text{
-    font-family: Garamond;
-}
-.text-box {
-    background: linear-gradient(to top right, rgba(200,200,200,0.5), rgba(225,225,225,0.8));
-    height: 30vh;
-    border-radius: 5px;
-    padding: 10vh;
-    /* width: 80vh; */
-}
-.fa-arrow-right, .fa-plus{
-    font-size: 1.5rem;
-}
-.state {
-    font-style: italic;
-    font-size: 1.5rem;
-    font-family: Garaomnd;
-    font-weight: bold;
-}
-/* ========================================= */
-/* ABOUT SECTION */
-#about {
-    background: #ccc url("./assets/images/prism.png") repeat;
-    min-height: 100vh;
-    color: #ddd;
-}
-#about p {
-    color: #ddd;
-}
-#about hr {
-    background-color: #ddd;
-}
-/* ========================================= */
-/* PORTFOLIO SECTION */
-#portfolio {
-    background: #aaa url("./assets/images/wheat.png") repeat;
-    min-height: 100vh;
-}
-#portfolio h1{
-    color: #ddd;
-    font-size: 4rem;    
-}
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-    margin: 20px;
-}
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    transition-duration: 750ms;
-    transition-timing-function: ease-in-out;
-}
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-    transition-duration: 750ms;
-    transition-timing-function: ease-in-out;
-}
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-.flip-card-back {
-    background: linear-gradient(to bottom, rgba(225,225,225,0.8),rgba(200,200,200,0.5));
-    color: #222;
-    transform: rotateY(180deg);
-}
-.flip-card-back p{
-    color: #222;
-}
-.fa-code {
-    float: left;
-    padding-left: 50px;
-}
-.fa-link {
-    float: right;
-    padding-right: 50px;
-}
-.fa-code,.fa-link{
-    padding-top: 25px;
-    font-size: 2rem;
-    color: #061d24;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in;
-}
-.fa-code:hover,.fa-link:hover{
-    font-size: 2.25rem;
-    color: rgb(48, 103, 119);
-    transition-duration: 250ms;
-    transition-timing-function: ease-in;
-}
-.transparent-box {
-    background-color: rgba(100,100,100,0.4);
-    min-height: 100vh;
-}
-/* ========================================= */
-/* CONTACT SECTION */
-#contact {
-    background: url("./assets/images/black-coffee.jpg") no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    background-color: #fff;
-}
-#contact h1{
-    color: #444;
-    font-size: 4rem;    
-}
-#contact-form {
-    background-color: rgba(25,25,25,0.75);
-    border-radius: 5px;
-    padding: 10px 20px;
-}
-#validation-message{
-    display: none;
-}
-#validation-text{
-    color: #fff;
-}
-/* ========================================= */
-/* FOOTER */
-footer {
-    /* font-size: 2rem; */
-    background-image: linear-gradient(to right, #061d24, #f8f1f1, #061d24);
-    border-bottom: #222 solid 2px;
-    box-shadow: #222;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-.fontAwesome:hover {
-    color: #737373;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in;
-}
-.fontAwesome {
-    font-size: 2rem;
-    color : #1b3142;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in;
-    margin: 0 20px 0 20px;
-    padding: 10px 0;
-}
-/* ========================================= */
 
-@media only screen and (max-width: 992px){
-    #home-text{
-        font-size: 2rem;
-    }
-    .state{
-        font-size: 1.25rem;
-    }
-    .fa-arrow-right, .fa-plus{
-        font-size: 1.25rem;
-    }
+#portfolio {
+  /* max-width: 1200px; */
+  padding-top: 50px;
 }
+#portfolio h1 {
+  padding-bottom: 20px;
+}
+
+#skillworx{
+  background: url("./assets/images/portfolio_thumbnails/skillworx_gray.png") no-repeat;
+  background-size: contain;
+}
+#straytx{
+  background: url("./assets/images/portfolio_thumbnails/strayTX_gray.png") no-repeat;
+  background-size: cover;
+}
+#zeolite{
+  background: url("./assets/images/portfolio_thumbnails/z_o_lite_gray.jpg") no-repeat;
+  background-size: cover;
+}
+#gif{
+  background: url("./assets/images/portfolio_thumbnails/for_gif_about_it_gray.jpg") no-repeat;
+  background-size: cover;
+}
+#database{
+  background: url("./assets/images/portfolio_thumbnails/database_dive_gray.jpg") no-repeat;
+  background-size: cover;
+}
+#bbq{
+  background: url("./assets/images/portfolio_thumbnails/BBQ_gray.jpg") no-repeat;
+  background-size: cover;
+}
+#friend{
+  background: url("./assets/images/portfolio_thumbnails/friend_finder_gray.jpg") no-repeat;
+  background-size: cover;
+}
+#trivia{
+  background: url("./assets/images/portfolio_thumbnails/trivia_game_gray.jpg") no-repeat;
+  background-size: cover;
+}
+
 
 @media only screen and (max-width: 768px){
-    .nav-link {
-        font-size: 1.25rem;
-    }
-    #home-text{
-        font-size: 1.5rem;
-    }
-    .state{
-        font-size: 1rem;
-    }
-    .fa-arrow-right, .fa-plus{
-        font-size: 1rem;
-    }
-    .fa-link, .fa-code{
-        font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width: 576px){
-    .flip-card {
-        margin: 20px 0px;
-    }
-    #portfolio .container-fluid{
-        padding:0;
-    }
-    #home-text{
-        font-size: 1rem;
-    }
-    .state{
-        font-size: .8rem;
-    }
-
-    .fa-arrow-right, .fa-plus{
-        font-size: 0.8rem;
-    }
-    .fontAwesome {
-        margin: 0 10px 0
-    }
-}
-
-
-@media only screen and (max-width: 457px){
-    
+  .hex-border{
+    /* position: static; */
+    /* bottom: -110px;
+    right: 10px; */
+    display: none;
+  }
+  .description, .badge-list{
+    max-width: 100%;
+  }
 }
