@@ -82,7 +82,16 @@ html{
 
 .fontAwesome {
   color: rgb(112, 18, 23);
-  padding-left: 10px;
+  padding: 20px;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+}
+
+.fontAwesome:hover {
+  background-color: rgb(112, 18, 23);
+  color: #eee;
+  border-radius: 1px;
+  transition: 630ms ease;
 }
 
 .tarjeta{
