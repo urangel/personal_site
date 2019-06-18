@@ -7,6 +7,15 @@
   font-family: AgeoLight;
   src: url(./assets/fonts/ageo/AgeoPersonalUse-Light.otf)
 }
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+/* ==============ANIMATION=============== */
+
 @keyframes appear {
   from {opacity: 0; filter: blur(2rem);}
   to {opacity: 1; filter: blur(0);}
@@ -14,20 +23,6 @@
 @keyframes fade-in {
   from {opacity: 0; transform: scale(.7,.7)}
   to {opacity: 1;}
-}
-.fade-in-element {
-animation: fade-in 1.4s;
-}
-
-html{
-  scroll-behavior: smooth;
-}
-.appear{
-  animation: appear 2s ease-in-out;
-}
-.bounce {
-  animation-name: bounce;
-  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
 }
 @keyframes bounce {
   0%   { transform: scale(1,1)      translateY(0); }
@@ -38,24 +33,32 @@ html{
   64%  { transform: scale(1,1)      translateY(0); }
   100% { transform: scale(1,1)      translateY(0); }
 }
-#blurb{
+.appear{
+  animation: appear 2s ease-in-out;
+}
+.fade-in-element {
+  animation: fade-in 1.4s;
+}
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+.hidden {
   opacity: 0;
 }
-#scroll-button{
-  animation: bounce 2s infinite;
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  cursor: pointer;
+/* ===================================== */
+/* =================NAV================= */
+#firstName {
   color: rgb(112, 18, 23);
-  margin: 0 auto 0 auto;
-  background-color: #fff;
-  height: 25px;
-  width: 25px;
+  font-family: AgeoBold;
 }
-
+#lastName {
+  color: rgb(112, 18, 23);
+  font-family: AgeoLight;
+}
 .myNav {
   font-size: 2rem;
   background-color: #eee;
-  /* background-image: linear-gradient(to right, #061d24, #aaa ); */
   border-bottom: #aaa solid 1px;
 }
 .navbar-toggler{
@@ -71,22 +74,11 @@ html{
 .navbar-brand {
   font-size: 2rem;
 }
-#firstName {
-  color: rgb(112, 18, 23);
-  font-family: AgeoBold;
-}
-#lastName {
-  color: rgb(112, 18, 23);
-  font-family: AgeoLight;
-}
-
 .fontAwesome {
   color: rgb(112, 18, 23);
   padding: 20px;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-
 }
-
 .fontAwesome:hover {
   background-color: rgb(112, 18, 23);
   color: #eee;
@@ -94,75 +86,9 @@ html{
   transition: 630ms ease;
 }
 
-.tarjeta{
-  position: relative;
-  width: 90%;
-  margin: 10px auto 40px auto;
-  border: 1px solid #ddd;
-  border-radius: 1px;
-  box-shadow: -2px 2px 1px 0px rgba(0,0,0,0.25);
-  padding: 20px;
-}
-.description{
-  max-width: 50%;
-}
-.hex-pattern {
-  height: 25px;
-  width: auto;
-  margin: 0;
-  padding:0;
-}
-h2{
-  margin-bottom:0;
-}
-.hex-border {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background-color: rgb(112, 18, 23);
-  margin: 10px auto;
-  height: 220px;
-  width: 220px;      
-}
-.hexagon {
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  margin: 10px auto;
-  height: 200px;
-  width: 200px;      
-}
+/* ===================================== */
 
-.small-hexagon {
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background-color: #ddd;
-  margin: 10px;
-  height: 50px;
-  width: 50px;      
-}
-/* .small-hexagon:hover{
-  background-color: rgb(112, 18, 23); 
-} */
-.project-links a {
-  color: rgb(112, 18, 23);
-}
-.project-links a:hover .small-hexagon{
-  background-color: rgb(112, 18, 23); 
-}
-
-.project-links a:hover {
-  color: #ddd;
-}
-
-.badge, .btn{
-  border-radius: 1px;
-}
-.badge-list{
-  max-width: 50%;
-}
-
-body {
-  /* margin-top: 100px; */
-}
+/* ===============ABOUT================= */
 #about {
   color: #fff;
   height: 100vh;
@@ -177,18 +103,36 @@ body {
   min-width: 100%; 
   min-height: 100%;
 }
+h2{
+  margin-bottom:0;
+}
+#blurb{
+  opacity: 0;
+}
+#scroll-button{
+  animation: bounce 2s infinite;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  cursor: pointer;
+  color: rgb(112, 18, 23);
+  margin: 0 auto 0 auto;
+  background-color: #fff;
+  height: 25px;
+  width: 25px;
+}
+
+/* ===================================== */
+
+/* =============PORTFOLIO=============== */
 
 #portfolio {
-  /* max-width: 1200px; */
   padding-top: 100px;
 }
 #portfolio h1 {
   padding-bottom: 20px;
 }
-
 #skillworx{
   background: url("./assets/images/portfolio_thumbnails/skillworx_gray.png") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 #straytx{
   background: url("./assets/images/portfolio_thumbnails/strayTX_gray.png") no-repeat;
@@ -218,9 +162,68 @@ body {
   background: url("./assets/images/portfolio_thumbnails/trivia_game_gray.jpg") no-repeat;
   background-size: cover;
 }
-.hidden {
-  opacity: 0;
+.tarjeta{
+  position: relative;
+  width: 90%;
+  margin: 10px auto 40px auto;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  box-shadow: -2px 2px 1px 0px rgba(0,0,0,0.25);
+  padding: 20px;
 }
+.description{
+  max-width: 50%;
+}
+.hex-pattern {
+  height: 25px;
+  width: auto;
+  margin: 0;
+  padding:0;
+}
+.hex-border {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-color: rgb(112, 18, 23);
+  margin: 10px auto;
+  height: 220px;
+  width: 220px;      
+}
+.hexagon {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  margin: 10px auto;
+  height: 200px;
+  width: 200px;      
+}
+.small-hexagon {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-color: #ddd;
+  margin: 10px;
+  height: 50px;
+  width: 50px;      
+}
+.project-links a {
+  color: rgb(112, 18, 23);
+}
+.project-links a:hover {
+  color: #ddd;
+}
+.project-links a .small-hexagon{
+  transition: 630ms ease;
+}
+.project-links a:hover .small-hexagon{
+  background-color: rgb(112, 18, 23); 
+  transition: 630ms ease;
+}
+.badge, .btn{
+  border-radius: 1px;
+}
+.badge-list{
+  max-width: 50%;
+}
+
+/* ===================================== */
 
 @media only screen and (max-width: 768px){
   .hex-border{
