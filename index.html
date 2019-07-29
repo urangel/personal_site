@@ -48,7 +48,7 @@
   <!-- ABOUT -->
   <div id="about" class="container-fluid d-flex justify-content-center align-items-center">
     <video autoplay muted loop id="myVideo">
-      <source src="./assets/images/red_hex.mp4" type="video/mp4">
+      <source src="./assets/images/red_hex.webm" type="video/webm">
     </video>
     <div class="row">
       <div id="blurb" class="col-12">
@@ -67,6 +67,40 @@
   <!-- PORTFOLIO -->
   <div id="portfolio">
     <h1 class="text-center mb-4">Projects</h1>
+
+    <div class="tarjeta hidden">
+      <h2>Aguacate</h2>
+      <img class="hex-pattern" src="./assets/images/hexagons.png" alt="hexagon-border">
+      <div class="hex-border">
+          <div class="hexagon" id="aguacate"></div>
+      </div>
+
+      <div class="badge-list d-flex">
+        <span>
+          <span class="badge badge-dark">MongoDB</span>
+          <span class="badge badge-dark">Express</span>
+          <span class="badge badge-dark">React</span>
+          <span class="badge badge-dark">Redux</span>
+          <span class="badge badge-dark">Redux-Thunk</span>
+          <span class="badge badge-dark">Node</span>
+          <span class="badge badge-dark">D3</span>
+        </span>
+      </div>
+      <div class="description d-flex align-items-center">
+        <p class="text-justify">
+          Aguacate allows you to see avocado data in different regions over time. A MERN stack site including Redux for state management. D3.js is used to visualize the data retreived from the Mongo database.
+        </p>
+      </div>
+      <div class="project-links d-flex justify-content-center">
+        <a href="https://github.com/urangel/aguacate" target="_blank">
+          <div class="small-hexagon d-flex align-items-center justify-content-center">Code</div>
+        </a>
+        <a href="https://avocado-vis.herokuapp.com/" target="_blank">
+          <div class="small-hexagon d-flex align-items-center justify-content-center">Site</div>
+        </a>
+      </div>
+    </div>
+
     <div class="tarjeta hidden">
       <h2>SkillWorx</h2>
       <img class="hex-pattern" src="./assets/images/hexagons.png" alt="hexagon-border">
@@ -98,8 +132,8 @@
           <div class="small-hexagon d-flex align-items-center justify-content-center">Site</div>
         </a>
       </div>
-      
     </div>
+    
     <div class="tarjeta hidden">
       <h2>StrayTX</h2>
       <img class="hex-pattern" src="./assets/images/hexagons.png" alt="hexagon-border">

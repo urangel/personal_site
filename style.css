@@ -130,6 +130,10 @@ h2{
 #portfolio h1 {
   padding-bottom: 20px;
 }
+#aguacate{
+  background: url("./assets/images/portfolio_thumbnails/aguacate_gray.JPG") no-repeat;
+  background-size: cover;
+}
 #skillworx{
   background: url("./assets/images/portfolio_thumbnails/skillworx_gray.png") no-repeat;
   background-size: cover;
