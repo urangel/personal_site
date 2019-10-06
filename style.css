@@ -13,6 +13,13 @@ html{
   scroll-behavior: smooth;
 }
 
+/* ==============VARIABLES=============== */
+
+:root{
+  --dark-red: rgb(112, 18, 23)
+}
+
+/* ====================================== */
 
 /* ==============ANIMATION=============== */
 
@@ -53,11 +60,11 @@ html{
 /* ===================================== */
 /* =================NAV================= */
 #firstName {
-  color: rgb(112, 18, 23);
+  color: var(--dark-red);
   font-family: AgeoBold;
 }
 #lastName {
-  color: rgb(112, 18, 23);
+  color: var(--dark-red);
   font-family: AgeoLight;
 }
 .myNav {
@@ -66,10 +73,10 @@ html{
   border-bottom: #aaa solid 1px;
 }
 .navbar-toggler{
-  background-color: rgb(112, 18, 23);
+  background-color: var(--dark-red);
 }
 .navbar-toggler-icon{
-  background-color: rgb(112, 18, 23);
+  background-color: var(--dark-red);
 }
 .navbar-collapse{
   display: flex;
@@ -79,12 +86,12 @@ html{
   font-size: 2rem;
 }
 .fontAwesome {
-  color: rgb(112, 18, 23);
+  color: var(--dark-red);
   padding: 20px;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 .fontAwesome:hover {
-  background-color: rgb(112, 18, 23);
+  background-color: var(--dark-red);
   color: #eee;
   border-radius: 1px;
   transition: 630ms ease;
@@ -95,21 +102,31 @@ html{
 /* ===============ABOUT================= */
 #about {
   color: #fff;
-  height: 100vh;
-  position: relative;
-  box-shadow: 0px 5px 25px 20px rgba(0,0,0,0.25); 
-  background: linear-gradient(50deg, rgba(146, 146, 146, 0.02) 0%, rgba(146, 146, 146, 0.02) 25%,rgba(82, 82, 82, 0.02) 25%, rgba(82, 82, 82, 0.02) 50%,rgba(217, 217, 217, 0.02) 50%, rgba(217, 217, 217, 0.02) 75%,rgba(41, 41, 41, 0.02) 75%, rgba(41, 41, 41, 0.02) 100%),linear-gradient(252deg, rgba(126, 126, 126, 0.01) 0%, rgba(126, 126, 126, 0.01) 25%,rgba(117, 117, 117, 0.01) 25%, rgba(117, 117, 117, 0.01) 50%,rgba(219, 219, 219, 0.01) 50%, rgba(219, 219, 219, 0.01) 75%,rgba(41, 41, 41, 0.01) 75%, rgba(41, 41, 41, 0.01) 100%),linear-gradient(272deg, rgba(166, 166, 166, 0.01) 0%, rgba(166, 166, 166, 0.01) 20%,rgba(187, 187, 187, 0.01) 20%, rgba(187, 187, 187, 0.01) 40%,rgba(238, 238, 238, 0.01) 40%, rgba(238, 238, 238, 0.01) 60%,rgba(204, 204, 204, 0.01) 60%, rgba(204, 204, 204, 0.01) 80%,rgba(5, 5, 5, 0.01) 80%, rgba(5, 5, 5, 0.01) 100%),linear-gradient(86deg, rgba(143, 143, 143, 0.02) 0%, rgba(143, 143, 143, 0.02) 12.5%,rgba(36, 36, 36, 0.02) 12.5%, rgba(36, 36, 36, 0.02) 25%,rgba(23, 23, 23, 0.02) 25%, rgba(23, 23, 23, 0.02) 37.5%,rgba(223, 223, 223, 0.02) 37.5%, rgba(223, 223, 223, 0.02) 50%,rgba(101, 101, 101, 0.02) 50%, rgba(101, 101, 101, 0.02) 62.5%,rgba(94, 94, 94, 0.02) 62.5%, rgba(94, 94, 94, 0.02) 75%,rgba(148, 148, 148, 0.02) 75%, rgba(148, 148, 148, 0.02) 87.5%,rgba(107, 107, 107, 0.02) 87.5%, rgba(107, 107, 107, 0.02) 100%),linear-gradient(25deg, rgba(2, 2, 2, 0.02) 0%, rgba(2, 2, 2, 0.02) 16.667%,rgba(51, 51, 51, 0.02) 16.667%, rgba(51, 51, 51, 0.02) 33.334%,rgba(26, 26, 26, 0.02) 33.334%, rgba(26, 26, 26, 0.02) 50.001000000000005%,rgba(238, 238, 238, 0.02) 50.001%, rgba(238, 238, 238, 0.02) 66.668%,rgba(128, 128, 128, 0.02) 66.668%, rgba(128, 128, 128, 0.02) 83.33500000000001%,rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%),linear-gradient(325deg, rgba(95, 95, 95, 0.03) 0%, rgba(95, 95, 95, 0.03) 14.286%,rgba(68, 68, 68, 0.03) 14.286%, rgba(68, 68, 68, 0.03) 28.572%,rgba(194, 194, 194, 0.03) 28.572%, rgba(194, 194, 194, 0.03) 42.858%,rgba(51, 51, 51, 0.03) 42.858%, rgba(51, 51, 51, 0.03) 57.144%,rgba(110, 110, 110, 0.03) 57.144%, rgba(110, 110, 110, 0.03) 71.42999999999999%,rgba(64, 64, 64, 0.03) 71.43%, rgba(64, 64, 64, 0.03) 85.71600000000001%,rgba(31, 31, 31, 0.03) 85.716%, rgba(31, 31, 31, 0.03) 100.002%),linear-gradient(90deg, hsl(80,0%,14%),hsl(80,0%,14%));
-  background-size: 400%;
-  animation: bg-animation 150s alternate infinite  linear;
+  /* height: 100vh; */
+  position: absolute;
+  margin: 33vh auto;
+  /* background: linear-gradient(50deg, rgba(146, 146, 146, 0.02) 0%, rgba(146, 146, 146, 0.02) 25%,rgba(82, 82, 82, 0.02) 25%, rgba(82, 82, 82, 0.02) 50%,rgba(217, 217, 217, 0.02) 50%, rgba(217, 217, 217, 0.02) 75%,rgba(41, 41, 41, 0.02) 75%, rgba(41, 41, 41, 0.02) 100%),linear-gradient(252deg, rgba(126, 126, 126, 0.01) 0%, rgba(126, 126, 126, 0.01) 25%,rgba(117, 117, 117, 0.01) 25%, rgba(117, 117, 117, 0.01) 50%,rgba(219, 219, 219, 0.01) 50%, rgba(219, 219, 219, 0.01) 75%,rgba(41, 41, 41, 0.01) 75%, rgba(41, 41, 41, 0.01) 100%),linear-gradient(272deg, rgba(166, 166, 166, 0.01) 0%, rgba(166, 166, 166, 0.01) 20%,rgba(187, 187, 187, 0.01) 20%, rgba(187, 187, 187, 0.01) 40%,rgba(238, 238, 238, 0.01) 40%, rgba(238, 238, 238, 0.01) 60%,rgba(204, 204, 204, 0.01) 60%, rgba(204, 204, 204, 0.01) 80%,rgba(5, 5, 5, 0.01) 80%, rgba(5, 5, 5, 0.01) 100%),linear-gradient(86deg, rgba(143, 143, 143, 0.02) 0%, rgba(143, 143, 143, 0.02) 12.5%,rgba(36, 36, 36, 0.02) 12.5%, rgba(36, 36, 36, 0.02) 25%,rgba(23, 23, 23, 0.02) 25%, rgba(23, 23, 23, 0.02) 37.5%,rgba(223, 223, 223, 0.02) 37.5%, rgba(223, 223, 223, 0.02) 50%,rgba(101, 101, 101, 0.02) 50%, rgba(101, 101, 101, 0.02) 62.5%,rgba(94, 94, 94, 0.02) 62.5%, rgba(94, 94, 94, 0.02) 75%,rgba(148, 148, 148, 0.02) 75%, rgba(148, 148, 148, 0.02) 87.5%,rgba(107, 107, 107, 0.02) 87.5%, rgba(107, 107, 107, 0.02) 100%),linear-gradient(25deg, rgba(2, 2, 2, 0.02) 0%, rgba(2, 2, 2, 0.02) 16.667%,rgba(51, 51, 51, 0.02) 16.667%, rgba(51, 51, 51, 0.02) 33.334%,rgba(26, 26, 26, 0.02) 33.334%, rgba(26, 26, 26, 0.02) 50.001000000000005%,rgba(238, 238, 238, 0.02) 50.001%, rgba(238, 238, 238, 0.02) 66.668%,rgba(128, 128, 128, 0.02) 66.668%, rgba(128, 128, 128, 0.02) 83.33500000000001%,rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%),linear-gradient(325deg, rgba(95, 95, 95, 0.03) 0%, rgba(95, 95, 95, 0.03) 14.286%,rgba(68, 68, 68, 0.03) 14.286%, rgba(68, 68, 68, 0.03) 28.572%,rgba(194, 194, 194, 0.03) 28.572%, rgba(194, 194, 194, 0.03) 42.858%,rgba(51, 51, 51, 0.03) 42.858%, rgba(51, 51, 51, 0.03) 57.144%,rgba(110, 110, 110, 0.03) 57.144%, rgba(110, 110, 110, 0.03) 71.42999999999999%,rgba(64, 64, 64, 0.03) 71.43%, rgba(64, 64, 64, 0.03) 85.71600000000001%,rgba(31, 31, 31, 0.03) 85.716%, rgba(31, 31, 31, 0.03) 100.002%),linear-gradient(90deg, hsl(80,0%,14%),hsl(80,0%,14%)); */
+  /* background-size: 400%; */
+  /* animation: bg-animation 150s alternate infinite  linear; */
 }
-#myVideo {
+#particles-js{
+  background: linear-gradient(to top right, #000, #555);
+  box-shadow: 0px 5px 25px 20px rgba(0,0,0,0.25); 
+
+}
+canvas {
+  background: linear-gradient(to top right, #000, #555);
+  min-height: 100vh;
+  min-width: 100%;
+}
+/* #myVideo {
   z-index: -1;
   position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
-}
+} */
 h2{
   margin-bottom:0;
 }
@@ -120,7 +137,7 @@ h2{
   animation: bounce 2s infinite;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   cursor: pointer;
-  color: rgb(112, 18, 23);
+  color: var(--dark-red);
   margin: 0 auto 0 auto;
   background-color: #fff;
   height: 25px;
@@ -133,9 +150,10 @@ h2{
 
 #portfolio {
   padding: 100px 0;
-  background: url('./assets/images/light_honeycomb.png');
+  background: url('./assets/images/dark-honeycomb.png');
 }
 #portfolio h1 {
+  color: #eee;
   padding-bottom: 20px;
 }
 #aguacate{
@@ -180,7 +198,7 @@ h2{
   margin: 10px auto 40px auto;
   border: 1px solid #ddd;
   border-radius: 1px;
-  box-shadow: -2px 2px 1px 0px rgba(0,0,0,0.25);
+  box-shadow: -4px 4px 1px 0px rgba(255,255,255,0.5);
   padding: 20px;
   background-color: #fff;
 }
@@ -198,7 +216,7 @@ h2{
   top: 10px;
   right: 20px;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background-color: rgb(112, 18, 23);
+  background-color: var(--dark-red);
   margin: 10px auto;
   height: 220px;
   width: 220px;      
@@ -217,7 +235,7 @@ h2{
   width: 50px;      
 }
 .project-links a {
-  color: rgb(112, 18, 23);
+  color: var(--dark-red);
 }
 .project-links a:hover {
   color: #ddd;
@@ -226,7 +244,7 @@ h2{
   transition: 630ms ease;
 }
 .project-links a:hover .small-hexagon{
-  background-color: rgb(112, 18, 23); 
+  background-color: var(--dark-red); 
   transition: 630ms ease;
 }
 .badge, .btn{
@@ -240,9 +258,6 @@ h2{
 
 @media only screen and (max-width: 768px){
   .hex-border{
-    /* position: static; */
-    /* bottom: -110px;
-    right: 10px; */
     display: none;
   }
   .description, .badge-list{
