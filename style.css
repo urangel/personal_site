@@ -256,3 +256,12 @@ h2{
     max-width: 100%;
   }
 }
+
+@media only screen and (max-width: 576px){
+  #about h3 {
+    font-size: 1.25rem;
+  }
+  #about h2{
+    font-size: 1.5rem;
+  }
+}
